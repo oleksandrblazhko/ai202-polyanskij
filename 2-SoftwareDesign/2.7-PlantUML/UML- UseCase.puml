@@ -1,0 +1,19 @@
+@startuml
+
+title Usecase for Information system
+
+left to right direction
+
+actor Writer
+
+rectangle Software {
+
+    usecase (User authorization)
+    usecase (Writing an essay)
+
+   (Writing an essay) .> (User authorization) : include
+
+   Writer --> (Writing an essay)
+}
+
+@enduml

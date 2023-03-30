@@ -1,0 +1,16 @@
+@startsalt
+
+{
+Doctor  | "  123   "
+{SI
+Hello          .
+    .
+    .
+    .
+    .
+}
+[Send] 
+}
+
+
+@endsalt

@@ -1,0 +1,15 @@
+@startuml
+
+title Concept Classes Diagram 
+
+
+
+Class Writer
+Class SomnologistDoctor
+Class Composition
+
+Writer"1" --> "*" Composition : Creates >
+
+Writer"*" <-- "*" SomnologistDoctor : Provides information <
+
+@enduml

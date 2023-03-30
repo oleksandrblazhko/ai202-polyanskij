@@ -1,0 +1,19 @@
+@startuml
+
+title Activity Diagram 
+
+start
+
+:The program creates a text file; 
+:The user gives the name of the file;
+
+
+if (Does a file with that name already exist?) then (no)
+  :Name confirmation;
+else (yes)
+  :Error: A file with that name already exists;
+endif
+
+stop
+
+@enduml

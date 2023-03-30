@@ -1,0 +1,24 @@
+@startuml
+
+title Relation Schema
+
+hide circle
+
+entity "Writer" as t01 {
+    (PK) id_writer
+    --
+    Name 
+    Photo 
+    Brief_description
+}
+entity "Writing" as t02 {
+    (PK) id_writer
+    --
+    Title 
+    (FK) Author 
+    Text_writig
+}
+
+t01 --{ t02
+
+@enduml

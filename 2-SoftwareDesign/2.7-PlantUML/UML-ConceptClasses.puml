@@ -6,9 +6,9 @@ title Concept Classes Diagram
 
 Class Writer
 Class SomnologistDoctor
-Class Composition
+Class Writing
 
-Writer"1" --> "*" Composition : Creates >
+Writer"1" --> "*" Writing : Creates >
 
 Writer"*" <-- "*" SomnologistDoctor : Provides information <
 

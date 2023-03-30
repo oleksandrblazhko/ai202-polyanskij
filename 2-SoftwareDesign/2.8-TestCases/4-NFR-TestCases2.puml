@@ -1,0 +1,9 @@
+@startsalt
+
+{
+title Message sent successfully!
+    Click OK to continue
+    [OK ]
+}
+
+@endsalt

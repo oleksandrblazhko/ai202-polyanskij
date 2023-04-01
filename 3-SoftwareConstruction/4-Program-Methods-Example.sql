@@ -26,4 +26,9 @@ CREATE TYPE BODY Writer AS
     DBMS_OUTPUT.PUT_LINE('Photo: ' || photo);
     DBMS_OUTPUT.PUT_LINE('Brief Description: ' || brief_description);
    END;
+   MEMBER PROCEDURE CreateWriting(Title VARCHAR2, Text_writing TEXT) IS
+   BEGIN
+      INSERT INTO Writing (id_writing, Title, Text_writing, Author)
+      VALUES (Writing_seq.nextval, Title, Text_writing, self.id_user);
+   END;
 END;
